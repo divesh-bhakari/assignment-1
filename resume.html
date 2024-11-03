@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1222d5;
+}
+
+.resume-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+
+    </style>
+</head>
+
+  
+<body>
+    <div class="resume-container">
+        <h1>RESUME</h1>
+        <form action="#" method="post">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Objective</h2>
+            <textarea id="objective" name="objective" rows="3" required placeholder="Your career objective..."></textarea>
+
+            <h2>Achievements</h2>
+            <textarea id="achievements" name="achievements" rows="3" required placeholder="List your achievements..."></textarea>
+
+            <h2>Education</h2>
+            <textarea id="education" name="education" rows="3" required placeholder="Your educational background..."></textarea>
+
+            <h2>Work Experience</h2>
+            <textarea id="work-experience" name="work-experience" rows="3" required placeholder="Your work experience..."></textarea>
+
+            <h2>Skills</h2>
+            <input type="text" id="skills" name="skills" required placeholder="e.g., HTML, CSS, JavaScript">
+
+            <h2>Certifications</h2>
+            <textarea id="certifications" name="certifications" rows="3" placeholder="Your certifications..."></textarea>
+
+            <h2>Projects</h2>
+            <textarea id="projects" name="projects" rows="3" placeholder="Your projects..."></textarea>
+
+            <h2>References</h2>
+            <textarea id="references" name="references" rows="3" placeholder="Your references..."></textarea>
+
+            <button type="submit">Submit Resume</button>
+        </form>
+    </div>
+    <div style="text-align: center; color: white;"><a href="index.html">Back to Home</a></div>
+</body>
+</html>

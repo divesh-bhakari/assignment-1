@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-container{
+    background-image: url("l.webp");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: fixed;
+}
+h1{
+    font-family: serif;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 100px;
+    
+    color: rgb(255, 255, 255);
+    
+}
+.form-back{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.form{
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    border-radius: 10px;  
+    background-image: linear-gradient(to right, rgba(65, 122, 171, 0.2), rgba(11, 11, 11, 0.5)); 
+    
+}
+ol{
+    margin-top: 30px;
+}
+li{
+    padding: 0px;
+    margin: 15px;
+    font-family: serif;
+    font-size: 20px;
+    
+}
+input{
+    border-radius: 5px;
+    border: 1px dashed rgb(255, 255, 255);
+    height: 30px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+.button{
+    text-align: center;
+}
+.submit{
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: serif;
+    margin: 10px;
+    
+}
+.reset{
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    font-family: serif;
+}
+.submit:hover{
+    background-color: rgb(19, 64, 200);
+}
+.reset:hover{
+    background-color: rgb(20, 77, 169);
+}
+select{
+    padding: 10px;
+    border-radius: 8px;
+    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <h1>biodata</h1>
+        <div class="form-back">  
+            <div class="form">
+                <form>
+                    <ol>
+                        <li>
+                            <label for="text">Enter Your Name *</label>
+                            <input type="text" placeholder="Name" required>
+                        </li>
+                        <li>
+                            <label for="text">Enter Your Gmail *</label>
+                            <input type="text" placeholder="Example@gmail.com">
+                        </li>
+                        <li>
+                            <label for="text">Mobile No *</label>
+                            <input type="number">
+                            <input type="number" placeholder="optional">
+                         </li>
+                        <li>
+                            <label for="text">Enter Your Address *</label>
+                            <input type="text" placeholder="">
+                        </li>     
+                        <li>
+                            <label for="text">Password *</label>
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Conform Password">
+                        </li>
+                        <li>
+                            <label for="dob">Date Of Birth *</label>
+                            <input type="date" placeholder="">
+                        </li>
+                        <li>
+                            <label>Gender</label>
+                             <input type="radio" id="Male" name="fav_language" value="Male">
+                             <label for="Male">Male</label>
+                             <input type="radio" id="Female" name="fav_language" value="Female">
+                             <label for="Female">Female</label>
+                        </li>
+                        <li>
+                            <label for="dept">Choose your Department</label>
+                            <select name="dept" id="dept">
+                              <option value="select">Select</option>
+                              <option value="CSE">CSE</option>
+                              <option value="ECE">ECE</option>
+                              <option value="EEE">EEE</option>
+                              <option value="CIVIL">CIVIL</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <div class="button">
+                        <button class="submit">Submit</button>
+                        <button class="reset">Reset</button>
+                    </div>    
+                    </form>
+            </div>    
+        </div>
+        <div style="text-align: center; color: white;"><a href="index.html">Back to Home</a></div>
+    </div>
+
+</body>
+</html>
